@@ -64,6 +64,7 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+  text-align: justify;
 }
 
 a {
@@ -98,7 +99,7 @@ h6 {
   top: 0;
   left: 0;
   bottom: 0;
-  padding: 0 15px;
+  padding: 0;
   width: 300px;
   transition: all ease-in-out 0.3s;
   overflow-y: auto;
@@ -171,6 +172,14 @@ h6 {
 .header.header-show {
   left: 0;
 }
+
+@media (min-width: 500px) {
+  .main {
+    max-width: 100%;
+
+  }
+}
+
 
 .header .header-toggle {
   color: var(--contrast-color);
